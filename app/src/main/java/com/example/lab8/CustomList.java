@@ -66,5 +66,15 @@ public class CustomList extends ArrayAdapter<City> {
             throw new IllegalArgumentException("That city is not listed!");
         }
     }
+    public boolean hasCity(City city){
+
+        for (City i : cities){
+            if(i.equals(city)){
+                return true;
+            }
+        }
+        return false;
+
+    }
 
 }

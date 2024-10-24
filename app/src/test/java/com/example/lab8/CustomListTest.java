@@ -49,5 +49,15 @@ public class CustomListTest {
 
 
     }
+    @Test
+    void testHasCity(){
+        CityList cityList = mockCityList();
+
+        City city = new City("Regina", "Saskatchewan");
+        cityList.add(city);
+        cityList.hasCity(city);
+        Assert.assertEquals(1, cityList.getCities().size());
+
+    }
 
 }
