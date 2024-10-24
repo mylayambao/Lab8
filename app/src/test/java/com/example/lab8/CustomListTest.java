@@ -37,4 +37,19 @@ public class CustomListTest {
 
     }
 
+    @Test void testDelete(){
+        CityList cityList = mockCityList();
+
+
+        City city = new City("Regina", "Saskatchewan");
+        cityList.add(city);
+        Assert.assertEquals(2, cityList.countCities());
+
+        cityList.delete(city);
+        Assert.assertEquals(1, cityList.countCities());
+
+
+
+    }
+
 }
