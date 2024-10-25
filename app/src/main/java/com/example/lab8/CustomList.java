@@ -68,12 +68,12 @@ public class CustomList extends ArrayAdapter<City> {
     }
     public boolean hasCity(City city){
 
-        for (City i : cities){
-            if(i.equals(city)){
-                return true;
-            }
-        }
-        return false;
+//        for (City i : cities){
+//            if(i.equals(city)){
+//                return true;
+//            }
+//        }
+//        return false;
 
     }
 
